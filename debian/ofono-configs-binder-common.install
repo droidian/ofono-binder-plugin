@@ -1,2 +1,2 @@
-10-lxc-android.conf /etc/systemd/system/ofono.service.d/
-20-droid-wait.conf /etc/systemd/system/ofono.service.d/
+10-droidian-lxc-android.conf /etc/systemd/system/ofono.service.d/
+20-droidian-droid-wait.conf /etc/systemd/system/ofono.service.d/
