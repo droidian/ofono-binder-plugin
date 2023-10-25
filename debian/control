@@ -2,6 +2,7 @@ Source: ofono-binder-plugin
 Section: libs
 Priority: optional
 Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+XS-Droidian-Extra-Repos: deb http://staging.repo.droidian.org/ trixie main
 XSBC-Original-Maintainer: Slava Monich <slava.monich@jolla.com>
 Build-Depends: debhelper,
                libglib2.0-dev (>= 2.0),
