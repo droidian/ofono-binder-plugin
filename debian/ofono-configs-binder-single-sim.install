@@ -1,1 +1,2 @@
-binder.conf /etc/ofono/binder.conf
+#!/usr/bin/dh-exec
+binder.conf => /etc/ofono/binder.conf

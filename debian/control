@@ -5,6 +5,7 @@ Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
 XS-Droidian-Extra-Repos: deb http://staging.repo.droidian.org/ trixie main
 XSBC-Original-Maintainer: Slava Monich <slava.monich@jolla.com>
 Build-Depends: debhelper,
+               dh-exec,
                libglib2.0-dev (>= 2.0),
                libgbinder-dev (>= 1.1.29),
                libgbinder-radio-dev (>= 1.5.3),

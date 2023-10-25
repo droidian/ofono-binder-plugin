@@ -1,1 +1,2 @@
-binder-single-sim-sim2.conf /etc/ofono/binder.conf
+#!/usr/bin/dh-exec
+binder-single-sim-sim2.conf => /etc/ofono/binder.conf
