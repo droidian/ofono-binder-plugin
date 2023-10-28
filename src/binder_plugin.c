@@ -1490,7 +1490,6 @@ binder_plugin_create_slot(
 
     slot->name = g_strdup(name);
     slot->svcmgr = gbinder_servicemanager_ref(sm);
-    slot->version = binder_plugin_detect_radio_interface(slot->svcmgr, slot->name);
     slot->req_timeout_ms = BINDER_DEFAULT_SLOT_REQ_TIMEOUT_MS;
     slot->slot_flags = BINDER_DEFAULT_SLOT_FLAGS;
     slot->start_timeout_ms = BINDER_DEFAULT_SLOT_START_TIMEOUT_MS;
@@ -1544,6 +1543,8 @@ binder_plugin_create_slot(
         DBG("%s: " BINDER_CONF_SLOT_RADIO_INTERFACE " %s", group, sval);
         slot->version = binder_plugin_parse_radio_interface(sval);
         g_free(sval);
+    } else {
+        slot->version = binder_plugin_detect_radio_interface(slot->svcmgr, slot->name);
     }
 
     /* startTimeout */
