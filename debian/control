@@ -23,60 +23,17 @@ Depends: ${shilibs:Depends},
          libmce-glib (>= 1.0.6),
 Description: Binder plugin for the Sailfish OS fork of ofono
 
-Package: ofono-configs-binder-common
+Package: ofono-configs-binder-example
 Architecture: all
 Multi-Arch: foreign
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          ofono-binder-plugin,
-Description: ofono configuration for devices using the binder plugin - common configurations
- This package contains the ofono configuration for devices using
- the binder plugin.
- .
- This package contains common configurations to make the plugin work.
-
-Package: ofono-configs-binder-single-sim
-Architecture: all
-Multi-Arch: foreign
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         ofono-configs-binder-common,
 Provides: ofono-configs-binder
 Conflicts: ofono-configs-binder
-Description: ofono configuration for devices using the binder plugin - single sim
+Description: ofono configuration for devices using the binder plugin - example configurations
  This package contains the ofono configuration for devices using
  the binder plugin.
- .
- This package adds support for single sim devices.
-
-Package: ofono-configs-binder-dual-sim
-Architecture: all
-Multi-Arch: foreign
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         ofono-configs-binder-common,
-Provides: ofono-configs-binder  
-Conflicts: ofono-configs-binder
-Description: ofono configuration for devices using the binder plugin - dual sim
- This package contains the ofono configuration for devices using
- the binder plugin.
- .
- This package adds support for dual sim devices.
-
-Package: ofono-configs-binder-single-sim-sim2
-Architecture: all
-Multi-Arch: foreign
-Depends: ${shlibs:Depends},
-         ${misc:Depends},
-         ofono-configs-binder-common,
-Provides: ofono-configs-binder
-Conflicts: ofono-configs-binder
-Description: ofono configuration for devices using the binder plugin - single sim on slot2
- This package contains the ofono configuration for devices using
- the binder plugin.
- .
- This package forces single sim on the second slot in dual sim devices.
- You shouldn't really install this unless you have a compelling reason to do so.
 
 Package: libofonobinderpluginext
 Section: libs
